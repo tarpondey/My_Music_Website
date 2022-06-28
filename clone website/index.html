@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <li class="brand"><img src="jiosaavn_logo.png" alt="Music">JioSaavn</li>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">Browse</a>
+        <a href="#contact">Upgrade</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    <div class="container">
+        <div class="songList">
+            <h1>Play Your Favourite Songs Here!</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="download.jpg" alt="1">
+                    <span class="songName">Ae Watan</span>
+                    <span class="songListPlay"><span class="timestamp">03.43 <i id="0" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="mere_watan.jpg" alt="1">
+                    <span class="songName">Ae Mere Watan Ke Logo</span>
+                    <span class="songListPlay"><span class="timestamp">06.23 <i id="1" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="sandese_aati.jpg" alt="1">
+                    <span class="songName">Sandese Aati Hai</span>
+                    <span class="songListPlay"><span class="timestamp">10.33 <i id="2" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="sare_jahan.jpg" alt="1">
+                    <span class="songName">Sare Jahan Se Accha</span>
+                    <span class="songListPlay"><span class="timestamp">05.40 <i id="3" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="aaguner_parashmani.jpg" alt="1">
+                    <span class="songName">Aaguner Parashmani</span>
+                    <span class="songListPlay"><span class="timestamp">04.42 <i id="4" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="shape_of_you.jpg" alt="1">
+                    <span class="songName">Shape Of You</span>
+                    <span class="songListPlay"><span class="timestamp">04.00 <i id="5" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="alvida.jpg" alt="1">
+                    <span class="songName">Alvida - KK</span>
+                    <span class="songListPlay"><span class="timestamp">05.40 <i id="6" class="fa-solid songItemPlay fa fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songbanner"></div>
+
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressbar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo" >
+            <img src="giffy.webp" width="23px" alt="" id="gif"> <span id="mastersongName">Ae Watan</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/81f0e1682b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
